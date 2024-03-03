@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8AD71CBF2B810DB7000F35EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CBE2B810DB7000F35EE /* AppDelegate.swift */; };
 		8AD71CC12B810DB7000F35EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CC02B810DB7000F35EE /* SceneDelegate.swift */; };
-		8AD71CC32B810DB7000F35EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CC22B810DB7000F35EE /* ViewController.swift */; };
-		8AD71CC62B810DB7000F35EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD71CC42B810DB7000F35EE /* Main.storyboard */; };
+		8AD71CC32B810DB7000F35EE /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CC22B810DB7000F35EE /* LibraryViewController.swift */; };
 		8AD71CC82B810DB9000F35EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD71CC72B810DB9000F35EE /* Assets.xcassets */; };
 		8AD71CCB2B810DB9000F35EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD71CC92B810DB9000F35EE /* LaunchScreen.storyboard */; };
+		8AD71CD82B8111C3000F35EE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CD72B8111C3000F35EE /* TabBarViewController.swift */; };
+		8AD71CDC2B8112F9000F35EE /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CDB2B8112F9000F35EE /* ForYouViewController.swift */; };
+		8AD71CDF2B811312000F35EE /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CDE2B811312000F35EE /* AlbumsViewController.swift */; };
+		8AD71CE32B811333000F35EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71CE22B811333000F35EE /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AD71CBB2B810DB7000F35EE /* iOS12-HW14-Alexey-Cherebayev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS12-HW14-Alexey-Cherebayev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AD71CBE2B810DB7000F35EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AD71CC02B810DB7000F35EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AD71CC22B810DB7000F35EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AD71CC52B810DB7000F35EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD71CC22B810DB7000F35EE /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		8AD71CC72B810DB9000F35EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AD71CCA2B810DB9000F35EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AD71CCC2B810DB9000F35EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD71CD72B8111C3000F35EE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8AD71CDB2B8112F9000F35EE /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
+		8AD71CDE2B811312000F35EE /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		8AD71CE22B811333000F35EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,90 @@
 		8AD71CBD2B810DB7000F35EE /* iOS12-HW14-Alexey-Cherebayev */ = {
 			isa = PBXGroup;
 			children = (
+				8AD71CD22B810ECF000F35EE /* App */,
+				8AD71CD42B810EF1000F35EE /* Sources */,
+				8AD71CD32B810EDD000F35EE /* Resources */,
+			);
+			path = "iOS12-HW14-Alexey-Cherebayev";
+			sourceTree = "<group>";
+		};
+		8AD71CD22B810ECF000F35EE /* App */ = {
+			isa = PBXGroup;
+			children = (
 				8AD71CBE2B810DB7000F35EE /* AppDelegate.swift */,
 				8AD71CC02B810DB7000F35EE /* SceneDelegate.swift */,
-				8AD71CC22B810DB7000F35EE /* ViewController.swift */,
-				8AD71CC42B810DB7000F35EE /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8AD71CD32B810EDD000F35EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8AD71CC72B810DB9000F35EE /* Assets.xcassets */,
 				8AD71CC92B810DB9000F35EE /* LaunchScreen.storyboard */,
 				8AD71CCC2B810DB9000F35EE /* Info.plist */,
 			);
-			path = "iOS12-HW14-Alexey-Cherebayev";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AD71CD42B810EF1000F35EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CD62B81104C000F35EE /* Controllers */,
+				8AD71CD52B81103F000F35EE /* TabBar */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8AD71CD52B81103F000F35EE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CD72B8111C3000F35EE /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8AD71CD62B81104C000F35EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CDD2B811304000F35EE /* Albums */,
+				8AD71CDA2B8112D9000F35EE /* ForYou */,
+				8AD71CE02B81131E000F35EE /* Search */,
+				8AD71CD92B8112AD000F35EE /* Library */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AD71CD92B8112AD000F35EE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CC22B810DB7000F35EE /* LibraryViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		8AD71CDA2B8112D9000F35EE /* ForYou */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CDB2B8112F9000F35EE /* ForYouViewController.swift */,
+			);
+			path = ForYou;
+			sourceTree = "<group>";
+		};
+		8AD71CDD2B811304000F35EE /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CDE2B811312000F35EE /* AlbumsViewController.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		8AD71CE02B81131E000F35EE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8AD71CE22B811333000F35EE /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +208,6 @@
 			files = (
 				8AD71CCB2B810DB9000F35EE /* LaunchScreen.storyboard in Resources */,
 				8AD71CC82B810DB9000F35EE /* Assets.xcassets in Resources */,
-				8AD71CC62B810DB7000F35EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AD71CC32B810DB7000F35EE /* ViewController.swift in Sources */,
+				8AD71CD82B8111C3000F35EE /* TabBarViewController.swift in Sources */,
+				8AD71CE32B811333000F35EE /* SearchViewController.swift in Sources */,
+				8AD71CC32B810DB7000F35EE /* LibraryViewController.swift in Sources */,
+				8AD71CDF2B811312000F35EE /* AlbumsViewController.swift in Sources */,
 				8AD71CBF2B810DB7000F35EE /* AppDelegate.swift in Sources */,
+				8AD71CDC2B8112F9000F35EE /* ForYouViewController.swift in Sources */,
 				8AD71CC12B810DB7000F35EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +231,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AD71CC42B810DB7000F35EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AD71CC52B810DB7000F35EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AD71CC92B810DB9000F35EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +370,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EE9JPLE3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW14-Alexey-Cherebayev/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW14-Alexey-Cherebayev/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +398,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EE9JPLE3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW14-Alexey-Cherebayev/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW14-Alexey-Cherebayev/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
